@@ -857,6 +857,12 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 	}
 }
 
+- (void)setProgress:(float)progress
+{
+    _progress = progress;
+    [self setNeedsDisplay];
+}
+
 #pragma mark - KVO
 
 - (void)registerForKVO {
